@@ -22,11 +22,8 @@ This project demonstrates end-to-end ETL pipeline implementation using Azure Dat
 
 ### Data Pipeline Steps
 
-```(`python`)
-#Sample data ingestion
-df_business = spark.read.json("abfss://sourcecontainer@sgyelp.dfs.core.windows.net/business.json")
-df_business.write.mode('overwrite').parquet("business.parquet")
-```
+```('python`)#Sample data ingestion
+df_business = spark.read.json("abfss://sourcecontainer@sgyelp.dfs.core.windows.net/business.json")df_business.write.mode('overwrite').parquet("business.parquet")```
 
 ### Key Analytics Features
 - User behavior analysis through review patterns.
